@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3">  </h1>
+    <p class="secret-text">The details are as follows.</p>
+    <ul>
+        <li>Employee Id: <%= employee.employee_id %> </li>
+        <li>Employee Name: <%= employee.first_name %> <%= employee.last_name %>  </li>
+        <li>Employee date of birth: <%= employee.date_of_birth %> </li>
+        <li>Employee Contact Number: <%= employee.contact_number %> </li>
+        <li>Employee Monthly Salary: <%= employee.monthly_salary %> </li>
+        <li>Employee Yearly Salary: <%= employee.monthly_salary*12 %> </li>
+        <li>Employee Yearly Bonus: <%= employee.yearly_bonus %> </li>
+    </ul>
+    <hr>
+  </div>
+
+  <div>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+  </div>
+</div>
+
+<script>
+    
+</script>
+

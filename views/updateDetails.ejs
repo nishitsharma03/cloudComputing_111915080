@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <p class="secret-text">Enter Updated details.</p>
+    <hr>    
+    <form action = "/updateSalary" method="POST">
+        <label for="employee_id">Employee Id</label>
+        <input type="text" class="form-control" name="employee_id">
+        <label for="employee_id">Monthly Salary</label>
+        <input type="text" class="form-control" name="monthly_salary">
+        <label for="employee_id">Yearly Bonus</label>
+        <input type="text" class="form-control" name="yearly_bonus">
+        <button class="btn btn-dark btn-lg" type="submit" class="btn btn-dark">Update Salary Details </button>
+    </form>
+  </div>
+
+  <div>
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+  </div>
+</div>
+
+<script>
+
+</script>
+
